@@ -1,0 +1,14 @@
+{
+  "forecasts": [
+    {
+      "location": "Uyo, NG",
+      "date": "January 18, 2021",
+      "pressure": "1000.7 mb",
+      "temperature": "29.5 C",
+      "humidity": "77%",
+      "condition": "Cloudy",
+      "wind": "WSW at 5 m/s",
+      "chanceOfRain": "80%"
+    }
+  ]
+}
