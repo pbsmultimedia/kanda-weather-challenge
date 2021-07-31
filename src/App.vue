@@ -1,18 +1,16 @@
 <template>
   <div id="app">
-    <!--
-    <div class="test">test</div>
-    -->
     <h1 class="location-title">Uyo, Nigeria - 12 hours weather forecast</h1>
     <GreyLayer />
     <Sky />
     <Soil />
-    <Rain />
+    <Rain v-if="weather.rainProbability > 33" />
     <Data />
   </div>
 </template>
 
 <script>
+import { mapState } from "vuex";
 import Sky from "./components/Sky";
 import Soil from "./components/Soil";
 import GreyLayer from "./components/GreyLayer";
@@ -27,6 +25,9 @@ export default {
     GreyLayer,
     Rain,
     Data,
+  },
+  computed: {
+    ...mapState(["weather"]),
   },
 };
 </script>

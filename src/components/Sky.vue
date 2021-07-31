@@ -1,7 +1,7 @@
 <template>
   <div class="sky" :style="skyColor">
     <Balloon />
-    <Clouds />
+    <Clouds v-if="weather.rainProbability > 33" />
   </div>
 </template>
 
