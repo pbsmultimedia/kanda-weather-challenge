@@ -5,28 +5,40 @@
         <AnimatedNumbers :number="weather.rainProbability" />
         <sup>%</sup>
       </h1>
-      <span>rain probability </span>
+      <span>
+        <font-awesome-icon icon="cloud-rain" />
+        rain probability
+      </span>
     </article>
     <article class="info-card temperature">
       <h1>
         <AnimatedNumbers :number="weather.temperature" />
         <sup>0</sup>
       </h1>
-      <span>temperature</span>
+      <span>
+        <font-awesome-icon icon="thermometer-half" />
+        temperature
+      </span>
     </article>
     <article class="info-card humidity">
       <h1>
         <AnimatedNumbers :number="weather.humidity" />
         <sup>%</sup>
       </h1>
-      <span>humidity</span>
+      <span>
+        <font-awesome-icon icon="tint" />
+        humidity
+      </span>
     </article>
     <article class="info-card wind">
       <h1>
         <AnimatedNumbers :number="weather.wind" />
         <sup>m/s</sup>
       </h1>
-      <span>WSW wind</span>
+      <span>
+        <font-awesome-icon icon="wind" />
+        WSW wind
+      </span>
     </article>
   </div>
 </template>
